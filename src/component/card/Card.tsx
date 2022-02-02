@@ -2,19 +2,19 @@ import { VFC } from 'react';
 
 export const Card: VFC = () => {
   return (
-    <div className="min-h-screen bg-gray-50 py-6 flex flex-col justify-center relative overflow-hidden sm:py-12">
-      <div className="absolute inset-0 bg-[url(/img/grid.svg)] bg-center [mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))]"></div>
-      <div className="relative px-6 pt-10 pb-8 bg-white shadow-xl ring-1 ring-gray-900/5 sm:max-w-lg sm:mx-auto sm:rounded-lg sm:px-10">
-        <div className="max-w-md mx-auto">
+    <div className="flex overflow-hidden relative flex-col justify-center py-6 min-h-screen bg-gray-50 sm:py-12">
+      <div className="[mask-image:linear-gradient(180deg,white,rgba(255,255,255,0))] absolute inset-0 bg-center"></div>
+      <div className="relative px-6 pt-10 pb-8 bg-white ring-1 ring-gray-900/5 shadow-xl sm:px-10 sm:mx-auto sm:max-w-lg sm:rounded-lg">
+        <div className="mx-auto max-w-md">
           <div className="divide-y divide-gray-300/50">
-            <div className="py-8 text-base leading-7 space-y-6 text-gray-600">
+            <div className="py-8 space-y-6 text-base leading-7 text-gray-600">
               <p>
                 An advanced online playground for Tailwind CSS, including support for things like:
               </p>
               <ul className="space-y-4">
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    className="flex-none w-6 h-6 fill-sky-100 stroke-sky-500 stroke-2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
@@ -28,7 +28,7 @@ export const Card: VFC = () => {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    className="flex-none w-6 h-6 fill-sky-100 stroke-sky-500 stroke-2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
@@ -42,7 +42,7 @@ export const Card: VFC = () => {
                 </li>
                 <li className="flex items-center">
                   <svg
-                    className="w-6 h-6 flex-none fill-sky-100 stroke-sky-500 stroke-2"
+                    className="flex-none w-6 h-6 fill-sky-100 stroke-sky-500 stroke-2"
                     strokeLinecap="round"
                     strokeLinejoin="round"
                   >
@@ -57,7 +57,7 @@ export const Card: VFC = () => {
                 demo to share online.
               </p>
             </div>
-            <div className="pt-8 text-base leading-7 font-semibold">
+            <div className="pt-8 text-base font-semibold leading-7">
               <p className="text-gray-900">Want to dig deeper into Tailwind?</p>
               <p>
                 <a href="https://tailwindcss.com/docs" className="text-sky-500 hover:text-sky-600">
